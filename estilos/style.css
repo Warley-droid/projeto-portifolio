@@ -22,11 +22,6 @@ body{
   color: var(--texto);
 }
 
-p{
-  text-indent: 15px;
-  text-align: justify;
-}
-
 header{
   background-color: var(--destaque);
   color: var(--texto);
@@ -92,6 +87,8 @@ section#ficha h1{
 
   section#ficha p{
     margin: 15px;
+    text-indent: 15px;
+    text-align: justify;
   }
 
 div#social{
@@ -125,7 +122,7 @@ article /* Todos os articles */{
 
 article h2{
   color: var(--destaque);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .video-container{
@@ -176,6 +173,37 @@ article h2{
   height: 100%;
   background-color: var(--destaque-inverso);
   border-radius: 4px;
+}
+
+#formacao-container{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 17px;
+}
+
+#formacao-container .curso{
+  background-color: var(--fundo-principal);
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso);
+  padding-left: 15;
+  transition: border-left-width 0.4s, border-color 0.4s;
+}
+
+#formacao-container .curso:hover{
+  border-left-width: 15px;
+  border-color: var(--destaque);
+  cursor: pointer;
+}
+
+#formacao-container .periodo{
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#formacao-container .instituicao{
+  color: var(--destaque-inverso);
+  font-size: 1.1em;
 }
 
 @media screen and (min-width: 768px){
